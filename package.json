@@ -3,7 +3,8 @@
   "workspaces": [
     "model",
     "native",
-    "web",
-    "utils"
+    "ui",
+    "utils",
+    "web"
   ]
 }

@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import store from 'model/store'
+import Text from 'ui/atoms/text'
 import { getNow } from 'utils/dates'
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
 
 class App extends Component {
   render() {
@@ -16,11 +17,14 @@ class App extends Component {
           Store imported from <code>model/store</code>: {JSON.stringify(store.getState())}
         </p>
         <p className="App-intro">
+          UI <code>Text</code> component imported from <code>ui/text</code>: <Text>foobar</Text>
+        </p>
+        <p className="App-intro">
           Util <code>getNow</code> imported from <code>utils/dates</code>: {getNow().toString()}
         </p>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
