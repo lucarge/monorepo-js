@@ -1,8 +1,31 @@
 {
   "name": "native",
   "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "crna-make-symlinks-for-yarn-workspaces": "^1.0.1",
+    "jest-expo": "23.0.0",
+    "metro-bundler-config-yarn-workspaces": "^1.0.2",
+    "react-native-scripts": "1.11.0",
+    "react-test-renderer": "16.0.0"
+  },
+  "main": "crna-entry.js",
+  "scripts": {
+    "android": "react-native-scripts android",
+    "eject": "react-native-scripts eject",
+    "ios": "react-native-scripts ios",
+    "prestart": "node link-workspaces.js",
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "start": "react-native-scripts start"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
   "dependencies": {
+    "expo": "^23.0.4",
     "model": "0.1.0",
+    "react": "16.2.0",
+    "react-native": "0.50.3",
     "utils": "0.1.0"
   }
 }

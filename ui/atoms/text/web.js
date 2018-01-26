@@ -1,3 +1,3 @@
 import React from 'react'
 
-export default props => <span {...props} />
+export default ({children, ...props}) => <span {...props}>{children}</span>

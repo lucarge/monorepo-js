@@ -1,3 +1,4 @@
+import React from 'react'
 import { Text } from 'react-native'
 
-export default props => <Text {...props} />
+export default ({children, ...props}) => <Text {...props}>{children}</Text>
